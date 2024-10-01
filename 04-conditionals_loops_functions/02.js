@@ -14,3 +14,23 @@
  * find both ways!
  *
  */
+
+for (let index = 5; index <= 1000; index += 5) {
+    console.log(index);
+}
+
+for (let index = 100; index >= -100; index--) {
+    console.log(index);
+}
+
+let num = 0;
+
+for (let i = 0; i < 5000; i++) {
+  if (i % 2 === 0) {
+    num += 3; 
+  } else {
+    num -= 1; 
+  }
+}
+
+console.log(num);

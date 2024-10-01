@@ -22,9 +22,46 @@
 
 // Write your code here:
 
+// 1.
+function KtoC(kelvin) {
+    return kelvin - 273.15;
+}
+  
+function CtoK(celsius) {
+    return celsius + 273.15;
+}
+  
+function FtoK(fahrenheit) {
+    return ((fahrenheit - 32) * 5) / 9 + 273.15;
+}
+  
+function KtoF(kelvin) {
+    return ((kelvin - 273.15) * 9) / 5 + 32;
+}
+  
+// 2.
+function pythagoras(a, b) {
+    return Math.sqrt(a * a + b * b);
+}
 
+// 3.
+function inchToCm(inches) {
+    return inches * 2.54;
+}
+  
 
-
+function CmToInch(cm) {
+    return cm * 0.3937;
+}
+  
+function MToKm(miles) {
+    return miles * 1.60934;
+}
+  
+function KmToM(km) {
+    return km * 0.621371;
+}
+  
 
 
 

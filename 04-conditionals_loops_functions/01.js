@@ -1,5 +1,5 @@
 function getRandomNumber(){
-    return Math.floor((Math.random() * 10) + 1);
+    return Math.floor((Math.random() * 100) + 1);
 }
 
 /**
@@ -40,7 +40,27 @@ function getRandomNumber(){
  *
  */
 
-let randomNumber = getRandomNumber() + getRandomNumber()
+let age = getRandomNumber();
+let price = 0;
+let fare = '';
 
-console.log(randomNumber)
-
+if (age <= 5) {
+    price = 'Free';
+    fare = `Your ride is ${price}!`;
+} else if (age >= 6 && age <= 13) {
+    price = 1;
+    fare = `Please pay child fare! Please pay $${price}!`;
+} else if (age >= 14 && age <= 21) {
+    price = 2;
+    fare = `Please pay teenager fare! Please pay $${price}!`;
+} else if (age >= 22 && age <= 30) {
+    price = 3;
+    fare = `Please pay young person fare! Please pay $${price}!`;
+} else if (age >= 31 && age <= 65) {
+    price = 4;
+    fare = `Please pay adult fare! Please pay $${price}!`;
+} else {
+    price = 'Free';
+    fare = `Your ride is ${price}!`;
+}
+console.log(fare);
